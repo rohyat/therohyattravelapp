@@ -22,6 +22,7 @@
   color: rgb(244, 244, 244);
   font-family: Georgia, 'Times New Roman', Times, serif;
   transition: color 0.3s; /* Smooth transition for link color */
+  text-align: center !important;
 }
 
 .navbar-nav .nav-item {
@@ -39,3 +40,22 @@
   color: #ffcc00;
   font-weight: bold; /* Optional: Add bold style to the active link */
 }
+
+/* navbar.component.css */
+
+/* ... (your existing styles) */
+
+/* Ensure the navbar remains in one row on smaller screens */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: row !important;
+    text-align: center !important;
+  }
+  .nav-item {
+    margin-right: 8px; /* Remove margin between nav items */
+  }
+  
+}
+
+
+
