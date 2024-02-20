@@ -31,9 +31,12 @@ h2 {
 }
 
 .image-container {
+  margin-top: 10px;
+  position: relative;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 a {
@@ -98,10 +101,6 @@ a {
   padding: 20px;
 }
 
-.image-container {
-  margin-top: 10px;
-}
-
 /* Add any additional styling as needed */
 
 @media (max-width: 768px) {
@@ -116,4 +115,26 @@ a {
     margin: 10px; /* Adjust styles for tablets and phones */
   }
 
+}
+
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)); /* Gradient background */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+  text-align: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
 }
