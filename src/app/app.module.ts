@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HotelDetailComponent } from './hotel-detail/hotel-detail.component';
+// import { HotelDetailComponent } from './hotel-detail/hotel-detail.component';
 import { PlaceDetailComponent } from './place-detail/place-detail.component';
 import { HelpDetailComponent } from './help-detail/help-detail.component';
 import { EnquirySuccessModalComponent } from './enquiry-success-modal/enquiry-success-modal.component';
@@ -18,6 +18,9 @@ import { ExplorePremiumPackageComponent } from './explore-premium-package/explor
 import { ExploreDeluxePackageComponent } from './explore-deluxe-package/explore-deluxe-package.component';
 import { ExploreDiamondPackageComponent } from './explore-diamond-package/explore-diamond-package.component';
 import { MatIconModule } from '@angular/material/icon';
+import { ExploreComponent } from './explore/explore.component';
+import { HotelstayComponent } from './hotelstay/hotelstay.component';
+import { HotelsHoteltabComponent } from './hotels-hoteltab/hotels-hoteltab.component';
 
 
 
@@ -28,14 +31,16 @@ import { MatIconModule } from '@angular/material/icon';
     NavbarComponent,
     HomeComponent,
     PackageDetailComponent,
-    HotelDetailComponent,
+    // HotelDetailComponent,
     PlaceDetailComponent,
     HelpDetailComponent,
     EnquirySuccessModalComponent,
     ExplorePremiumPackageComponent,
     ExploreDeluxePackageComponent,
     ExploreDiamondPackageComponent,
-   
+    ExploreComponent,
+    HotelstayComponent,
+    HotelsHoteltabComponent,
   ],
   imports: [
     BrowserModule,

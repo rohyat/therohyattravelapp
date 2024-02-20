@@ -12,4 +12,5 @@ export class PackageDetailComponent {
     console.log('Enquiry sent for package:', packageName);
     this.enquiryModalService.openSuccessModal();
  }
+ 
 }

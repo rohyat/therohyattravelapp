@@ -69,3 +69,9 @@ body {
     background-color: #4800ff;
     color: #ffffff;
   }
+
+  @media only screen and (max-width: 600px) {
+    .button-margin {
+      margin : 8px auto ;
+    }
+  }

@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-place-detail',
-  templateUrl: './place-detail.component.html',
-  styleUrls: ['./place-detail.component.css']
+  selector: 'app-hotels-hoteltab',
+  templateUrl: './hotels-hoteltab.component.html',
+  styleUrls: ['./hotels-hoteltab.component.css']
 })
-export class PlaceDetailComponent {
+export class HotelsHoteltabComponent {
   places = [
     { name: 'Srinagar', imageUrl: 'assets/images/places-image-1.jpg' ,id :1 },
     { name: 'Pahalgam', imageUrl: 'assets/images/places-image-1.jpg' ,id :2 },
@@ -17,12 +17,9 @@ export class PlaceDetailComponent {
 
   constructor(private router: Router) { }
 
-  explorePlace(place: any) {
-    this.router.navigate(['/explore', place.id]);
-  }
-
   showHotels(place: any) {
     this.router.navigate(['/hotel-stay', place.id]);
   }
   
+
 }
